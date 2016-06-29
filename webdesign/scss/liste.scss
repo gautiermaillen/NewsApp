@@ -1,0 +1,100 @@
+
+/* liste.scss */
+
+body
+{
+	main
+	{
+
+		h2
+		{
+			color: #1951A8;
+			font-size: 1em;
+			margin-bottom: 0.6em;
+			font-weight: bold;
+		}
+
+		form
+		{
+			display: flex;
+			justify-content: space-between;
+
+			input
+			{
+				flex: 1;
+				margin-right: 1em;
+				padding: 0.5em 0.5em 0.4em;
+				border: 1px solid #1951A8;
+			}
+
+			input[type="button"]
+			{
+				background-color: #1951A8;
+				color: white;
+			}
+		}
+
+		hr
+		{
+			margin-top: 2em;
+			opacity: 0.3;
+		}
+
+		div.news
+		{
+			display: flex;
+
+			div.headline
+			{
+				flex: 1;
+				text-align: center;
+				flex-direction: column;
+				color: white;
+
+				div
+				{
+					padding: 0.8em;
+				}
+
+				div:first-child
+				{
+					background-color: #2970E1;
+					border-radius: 6px 0 0 0;
+				}
+
+				div:last-child
+				{
+					background-color: #418AFF;
+					border-radius: 0 0 0 6px;
+				}
+
+				div:last-child:hover
+				{
+					opacity: 0.9;
+					cursor: pointer;
+				}
+			}
+
+			div.titreNews
+			{
+				flex: 9;
+				border-radius : 0 6px 6px 0;
+				background-color: #1951A8;
+				color: white;
+				padding: 0.8em;
+				
+				position: relative;
+
+				h3
+				{
+					margin-left: 1em;
+					position: absolute;
+					top: 50%; /* poussé de la moitié de hauteur du référent */
+					transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+				}
+			}
+		}
+	}
+}
+
+
