@@ -51,7 +51,7 @@ body main div.news div.headline div:first-child {
 }
 /* line 66, ../scss/liste.scss */
 body main div.news div.headline div:last-child {
-  background-color: #b4b4b4;
+  background-color: #d2d2d2;
   border-radius: 0 0 0 6px;
   color: #373737;
 }
@@ -70,12 +70,12 @@ body main div.news div.headline div:last-child:hover .fa-heart {
 body main div.news div.titreNews {
   flex: 8;
   border-radius: 0 6px 6px 0;
-  background-color: #1951A8;
-  color: white;
+  background-color: gainsboro;
+  color: #323232;
   padding: 0.8em;
   position: relative;
 }
-/* line 100, ../scss/liste.scss */
+/* line 99, ../scss/liste.scss */
 body main div.news div.titreNews a h3 {
   font-weight: 200;
   margin-left: 1em;
@@ -85,35 +85,35 @@ body main div.news div.titreNews a h3 {
   transform: translateY(-50%);
   /* tiré de la moitié de sa propre hauteur */
 }
-/* line 108, ../scss/liste.scss */
+/* line 107, ../scss/liste.scss */
 body main div.news div.titreNews a h3 .fa-external-link {
   margin-left: 0.5em;
 }
 
 @media screen and (max-width: 860px) {
-  /* line 129, ../scss/liste.scss */
+  /* line 128, ../scss/liste.scss */
   body header ul.nav li a {
     font-size: 0.8em;
   }
-  /* line 137, ../scss/liste.scss */
+  /* line 136, ../scss/liste.scss */
   body main {
     width: 90%;
     margin: 0 auto;
   }
-  /* line 142, ../scss/liste.scss */
+  /* line 141, ../scss/liste.scss */
   body main form {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
-  /* line 148, ../scss/liste.scss */
+  /* line 147, ../scss/liste.scss */
   body main form input {
     flex: 1;
     margin-right: 0;
     padding: 1em;
     margin-top: 0.8em;
   }
-  /* line 156, ../scss/liste.scss */
+  /* line 155, ../scss/liste.scss */
   body main form input[type="button"] {
     padding: 1em 0.5em 2.2em;
   }
