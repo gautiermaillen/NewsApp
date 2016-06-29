@@ -1,0 +1,43 @@
+    <header>
+      <section>
+        <h1>{{title}}</h1>
+      <ul class="nav">
+        <li><a href="">Connexion</a></li>
+      </ul>
+    </section>
+  </header>
+  <main>
+    <section id="ajout">
+      <div class="container">
+        <h2>Ajouter une news</h2>
+        <form action="">
+          <input type="text" placeholder="Titre de la news...">
+          <input type="text" placeholder="Lien vers le site...">
+          <input type="button" name="ajouter" value="Ajouter">
+        </form>
+        <hr/>
+      </div>
+    </section>
+    <section id="news">
+      <div class="container">
+        <h2>Les news</h2>
+        <div class="lesNews">
+            <div class="news" *ngFor="let newsprop of lesnews">
+              <div class="headline"
+                [class.selected]="newsprop === selectedNews"
+                (click)="onSelect(newsprop)">
+                <div class="badge"><p>News {{newsprop.id}}</p></div>
+                  <div>
+                    <i class="fa fa-heart" aria-hidden="true"></i><p>{{newsprop.votes}} votes</p>
+                  </div>
+                </div>
+                  <div class="titreNews">
+                    <a href="{{newsprop.lien}}">
+                      <h3>{{newsprop.titre}}<i class="fa fa-external-link" aria-hidden="true"></i></h3>
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+  </main>
