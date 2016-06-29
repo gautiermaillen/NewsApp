@@ -1,4 +1,3 @@
-/*				CSS EG ARCHITECTURE            */
 
 /* ===============================
 			BASIC CSS
@@ -9,6 +8,8 @@ body{
 	padding: 10px;
 	color: #444348;
 	line-height: 150%;
+	font-weight: 200;
+    font-family: 'Helvetica', sans-serif;
 }
 .container{
 	margin: 2em auto 0;
